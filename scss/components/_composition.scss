@@ -1,0 +1,40 @@
+.composition {
+    
+    
+    &__photo {
+		transition: all 200ms;
+		box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        
+        &--p1 {
+            
+        }
+        
+        &--p2 {
+            
+        }
+        
+        &--p3 {
+            
+        }
+        
+        &:hover {
+			box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+        }
+        
+    }
+    
+    &:hover &__photo:not(:hover) {
+        
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+

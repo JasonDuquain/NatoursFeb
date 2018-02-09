@@ -1,0 +1,62 @@
+
+.section-about {
+    
+}
+
+.section-features {
+    
+    
+    & > * {
+            
+    }
+}
+
+.section-tours {
+    
+}
+
+.section-stories {
+    
+}
+
+.section-book {
+    
+}
+
+.book {
+	
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+    &__form {
+        
+    }
+}
+
+.bttBtn {
+    
+
+
+    &:hover {
+        background-color: #fff;
+        padding: 1em 3em;
+    }
+
+    &.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

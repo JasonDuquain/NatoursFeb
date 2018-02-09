@@ -1,0 +1,73 @@
+delete natours - COMPLETE/scss - COMPLETE until before MQs folder if it is not needed to avoid confusion???
+
+start using sass and REMs from the beginning
+
+run 'npm install' and 'git init'
+ 
+base.scss is done..use typography.scss for body styles 
+ 
+start at sect2 lect 6(building the hdr part 1) 6min mark
+
+sect lect 8 (creating cool animations) - end at 13:30
+
+after hdr skip to sect 5 lect 35 (building teh about sect part 1)
+
+put all js styles in home.scss
+
+booking sect part 3 - end at 6:22 (skip radio btn styles)
+
+building nav sect part 2 - end at 7:40 (skip cubic-bezier)
+
+building nav sect part 3 - end at 12:30 (skip transform-origin)
+
+for popup use flexbox instead of table layout
+
+before MQ styles update all scss files to the templates in scss- TEMPLATES before MQs folder then start at sect6 Lect 57 - 6 minute mark.
+
+added variables:
+
+$phone: 600px; //0-600
+$tab-port: 900px; //600-900
+$tab-land: 1200px; //normal styles..1200-1800
+$big-desktop: //1800px; 1800+
+
+html {
+    // This defines what 1rem is
+    font-size: 62.5%; // width 1200-1800
+    
+    @include breakpoint(max-width $tab-land) { //width < 1200
+        font-size: 56.25%; // 1200-18..1rem === 9px | 9/16
+    }
+    
+    @include breakpoint(max-width $tab-port) { //width < 900
+        font-size: 50%; // 1rem === 8px | 8/16 = 50%;
+    }
+    
+    @include breakpoint(min-width $big-desktop) { // width > 1800
+        font-size: 75%; // 1rem === 12px | 12/16
+    }
+    
+}
+
+GRID:
+start with original then update them
+
+add col class to add bottom margins now but only when viewport width is less than 900px
+
+@include breakpoint(max-width $tab-port) {
+    [class^="col-"]:not(:last-child) {
+        margin-bottom: 3rem;
+    }        
+}
+
+add a clearfix class to the 2nd col that has the images..when they are floated this is needed:
+
+.section-about .clearfix {
+    @include clearfix;
+}
+
+--UPDATE MODAL MQ BREAKPOINTS ON YOUR OWN
+
+--END PROJECT AT SECT 6 LECT 59
+
+

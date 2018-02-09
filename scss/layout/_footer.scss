@@ -1,0 +1,39 @@
+
+.footer {
+    
+    
+    &__logo-box {
+        
+    }
+    
+    &__logo {
+        
+    }
+    
+    &__navigation {
+        
+    }
+    
+    &__item {
+        
+        
+        &:not(:last-child) {
+                
+        }
+    }
+    
+    &__link {
+    
+        &:link, &:visited {
+            transition: all 200ms;
+        }
+        
+        &:hover, &:active {
+            
+        }
+    }
+    
+    &__copyright {
+        
+    }
+}

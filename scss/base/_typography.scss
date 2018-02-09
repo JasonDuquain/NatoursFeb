@@ -1,0 +1,47 @@
+body {
+    font-family: "Lato", sans-serif;
+    
+}
+
+.heading-primary {
+    
+
+    &--main {
+        
+    }
+    
+    &--sub {
+        
+    }
+    
+    
+}
+
+.heading-secondary {
+		transition: all 200ms 50ms;
+    
+    &:hover {
+        
+    }
+}
+
+.heading-tertiary {
+    
+    
+}
+
+/*yes use last-child so there is margin between last paragraph and the button*/
+.paragraph {
+    
+    
+    &:not(:last-child) {
+			
+    }
+}
+
+
+
+
+
+
+

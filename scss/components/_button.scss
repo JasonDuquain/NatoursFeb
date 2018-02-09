@@ -1,0 +1,67 @@
+.btn {
+    
+    &:link, &:visited, & {
+        transition: transform 200ms 50ms;
+        
+    }
+    
+    //chng for the button element
+    
+    
+    &:hover {
+		box-shadow: 0 1rem 2rem rgba($color-black,.2);
+    }
+
+    &:active {
+        
+    }
+
+    &--white {
+        
+    }
+
+    &--white::after {
+        
+    }
+        
+    &--green {
+        
+    }
+
+    &--green::after {
+        
+    }   
+        
+    &::after {
+        content: "";
+        transition: all 400ms 50ms;
+		
+    }
+
+
+    &:hover::after {
+        
+    }
+
+    &--animated {
+        
+    }
+        
+     
+}
+
+.btn-text {
+        &:link, &:visited {
+			transition: all 200ms ease-out 50ms;
+        } 
+        
+        &:hover {
+            
+        }
+        
+        &:active {
+			box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        }
+    
+    }
+

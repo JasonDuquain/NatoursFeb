@@ -1,0 +1,39 @@
+.story {
+	font-size: $default-font-size;
+    box-shadow: 0 3rem 6rem rgba($color-black, .1);
+    background-color: rgba($color-white, .6);
+	
+	
+    
+    & > * {
+       
+    }
+    
+    &__shape {
+        
+    }
+    
+    &__img {
+        
+    }
+    
+    &__text {
+       
+    }
+    
+    &__caption {
+        transition: all 500ms;
+        
+    }
+    
+    &:hover  &__caption {
+        
+    }
+    
+    &:hover &__img {
+        
+    }
+    
+    
+} //.story 
+

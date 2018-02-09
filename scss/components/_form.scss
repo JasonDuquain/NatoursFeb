@@ -1,0 +1,47 @@
+
+.form {
+    
+    &__group:not(:last-child) {
+        
+    }
+    
+    &__input {
+        transition: all 300ms;
+        
+        &:focus {
+            
+        }
+        
+        &:focus:invalid {
+               
+        }
+        
+        &::-webkit-input-placeholder {
+                
+        }
+        
+         
+    } // &__input
+    
+    &__label {
+        transition: all 300ms;
+    }
+    
+    &__input:placeholder-shown + label {
+        
+    }
+    
+    &__radio-group {
+        
+    }
+    
+    &__radio-label {
+        
+    }
+    
+
+} // .form
+
+
+
+

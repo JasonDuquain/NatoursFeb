@@ -1,0 +1,98 @@
+
+.navigation {
+    
+    &__checkbox {
+            
+    }
+    
+    &__button {
+		box-shadow: 0 1rem 3rem rgba($color-black, .1);
+    }
+    
+    &__background {
+        
+        //transition: transform 800ms cubic-bezier(.86, 0, .07, 1);
+    }
+    
+    &__nav {
+		
+        //transition: all 800ms cubic-bezier(.68, -.55, .265, 1.55);
+    }
+    
+    &__list {
+        
+    }
+    
+    &__item {
+            
+    }
+    
+    &__link {
+    
+        &:link, &:visited {
+            transition: all 400ms;
+            
+			
+            span {
+                
+            }
+        }
+
+        &:hover, &:active {
+            
+        }    
+        
+    }
+    
+    ////FUNCTIONALITY
+    &__checkbox:checked ~ &__background {
+        
+    }
+    
+     &__checkbox:checked ~ &__nav {
+         
+    }
+    
+    
+    //////ICON
+    &__icon {
+        
+        
+        &, &::before, &::after {
+            
+        } 
+        
+        &::before, &::after {
+            content: "";
+            transition: all 200ms;
+			
+        }
+        
+        &::before {  }
+        &::after {  }
+        
+        
+    } // &__icon
+    
+    &__button:hover &__icon::before {
+        
+    }
+    
+    &__button:hover &__icon::after {
+        
+    }
+    
+    &__checkbox:checked + &__button &__icon {
+       
+    }
+    
+    &__checkbox:checked + &__button &__icon::before {
+        
+    }
+    
+    &__checkbox:checked + &__button &__icon::after {
+        
+    }
+       
+    
+} // .navigation

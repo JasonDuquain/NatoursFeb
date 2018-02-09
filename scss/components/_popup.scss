@@ -1,0 +1,46 @@
+.popup {
+	transition: all 300ms;	
+    
+    &:target {
+        
+    }
+    
+    &:target &__content {
+        
+    }
+    
+    &__content {
+		box-shadow: 0 2rem 4rem rgba($color-black, .2);
+        transition: all 500ms 200ms;
+    }
+    
+    &__left {
+            
+    }
+    
+    &__right {
+        
+    }
+    
+    &__img {
+        
+    }
+    
+    &__text {
+        
+    }
+    
+    &__close {
+        
+        &:link, &:visited {
+			color: $color-grey-dark; 
+            transition: all 200ms;
+        }
+        
+        &:hover {
+            
+        }
+    }
+ 
+    
+} // .popup

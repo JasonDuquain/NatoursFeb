@@ -1,0 +1,120 @@
+.card {
+    transition: transform 1200ms ease-out;
+	
+    
+    &__side {
+		transition: all 800ms ease;
+        
+        &--front {
+            
+        }
+        
+        &--back {
+            
+            
+            &-1 {
+                
+            }
+            
+             &-2 {
+                
+            }
+            
+             &-3 {
+                
+            }
+            
+        }
+    }
+    
+    &:hover &__side--front {
+        
+    }
+    
+    &:hover &__side--back {
+        
+    }
+    
+    /////////FRONT SIDE STYLING
+    &__picture {
+        
+        
+        &--1 {
+                   
+        }
+         
+        &--2 {
+                   
+        }
+         
+        &--3 {
+                     
+        }
+        
+    }
+    
+    &__heading {
+        
+    }
+    
+    &__heading-span {
+        
+        
+        
+        &--1 {
+             
+        }
+        
+        &--2 {
+            
+        }
+        
+        &--3 {
+            
+        }
+        
+    } //&__heading-span
+    
+    &__details {
+        
+        
+        ul {
+           
+            
+            
+            li {
+                
+                
+                &:not(:last-child) {
+                    
+                }
+            }
+            
+        }
+        
+    } //.&__details
+    
+    
+    ///////BACK SIDE STYLING
+    &__cta {
+        
+    }
+    
+    &__price-box {
+        
+    }
+    
+    &__price-only {
+        
+    }
+    
+    &__price-value {
+        
+        
+    }
+    
+
+    
+} //.card
+
+
