@@ -1,23 +1,30 @@
 [class^="row"] {
-    
+    max-width: $grid-width;
+    margin: 0 auto;
 }
 
 .row-first, .row-sixth {
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
 }
 
 .row-second {
-    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 6rem;
 }
 
 .row-third {
-    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 6rem;
 }
 
 .row-fourth {
     
     & + & {
-        
+        margin-top: 6rem;
     }
 }
 

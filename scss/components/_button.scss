@@ -2,26 +2,34 @@
     
     &:link, &:visited, & {
         transition: transform 200ms 50ms;
-        
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 1.5rem 4rem;
+        border-radius: 99em;
+        font-size: $default-font-size;
+        position: relative;
     }
     
     //chng for the button element
     
     
     &:hover {
-		box-shadow: 0 1rem 2rem rgba($color-black,.2);
+		      box-shadow: 0 1rem 2rem rgba($color-black,.2);
+        transform: translateY(-3px);
     }
 
     &:active {
-        
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
     }
 
     &--white {
-        
+        background-color: $color-white;
+        color: $color-grey-dark;    
     }
 
     &--white::after {
-        
+        background-color: $color-white;
     }
         
     &--green {
@@ -35,16 +43,24 @@
     &::after {
         content: "";
         transition: all 400ms 50ms;
-		
+        display: inline-block;
+		      height: 100%;
+        width: 100%;
+        border-radius: 99em;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
     }
 
 
     &:hover::after {
-        
+        transform: scale(1.4, 1.6);
+        opacity: 0;
     }
 
     &--animated {
-        
+        animation: moveInBottom 500ms ease-out 750ms;
     }
         
      
@@ -52,15 +68,23 @@
 
 .btn-text {
         &:link, &:visited {
-			transition: all 200ms ease-out 50ms;
+            color: $color-primary;
+            display: inline-block;
+            border-bottom: 1px solid $color-primary;
+            padding: 3px;
+            font-size: $default-font-size;
+			         transition: all 200ms ease-out 50ms;
         } 
         
         &:hover {
-            
+            background-color: $color-primary;
+            color: $color-white;
+            box-shadow: 0 1rem 2rem rgba($color-black, .15);
+            transform: translateY(-2px);
         }
         
         &:active {
-			box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+           box-shadow: 0 .5rem 1rem rgba($color-black, .15); 
         }
     
     }
