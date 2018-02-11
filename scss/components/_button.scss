@@ -33,12 +33,13 @@
     }
         
     &--green {
-        
+        background-color: $color-primary;
+        color: $color-white;
     }
 
     &--green::after {
-        
-    }   
+        background-color: $color-primary;
+    }    
         
     &::after {
         content: "";
