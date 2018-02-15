@@ -58,12 +58,24 @@
 }
 
 .bttBtn {
-    
-
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 4rem;
+    color: #000;
+    text-transform: uppercase;
+    opacity: 0;
+    visibility: hidden;
 
     &:hover {
-        background-color: #fff;
-        padding: 1em 3em;
+        transform: scale(1.2);
+        
     }
 
     &.visible {
